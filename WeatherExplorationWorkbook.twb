@@ -1,0 +1,522 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1112.0850                               -->
+<workbook original-version='18.1' source-build='2024.3.1 (20243.24.1112.0850)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='weather_data (weather_db)' inline='true' name='federated.1n4ilfm1ft4run1gjcyre1pvlpft' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.1jncv2o1ep0p5j11zg0oq1f7hgbg'>
+            <connection authentication='username-password' class='postgres' dbname='weather_db' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <relation connection='postgres.1jncv2o1ep0p5j11zg0oq1f7hgbg' name='weather_data' table='[public].[weather_data]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature_f</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[temperature_f]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>temperature_f</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature_min_f</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[temperature_min_f]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>temperature_min_f</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature_max_f</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[temperature_max_f]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>temperature_max_f</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp_feels_like_f</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[temp_feels_like_f]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>temp_feels_like_f</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pressure_hpa</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pressure_hpa]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>pressure_hpa</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>humidity_percent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[humidity_percent]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>humidity_percent</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weather</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weather]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>weather</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weather_description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weather_description]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>weather_description</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_speed_m_per_s</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wind_speed_m_per_s]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>wind_speed_m_per_s</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_direction_degrees</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wind_direction_degrees]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>wind_direction_degrees</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cloudiness_percent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cloudiness_percent]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>cloudiness_percent</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rain_volume_mm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rain_volume_mm]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>rain_volume_mm</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>snow_volume_mm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[snow_volume_mm]</local-name>
+            <parent-name>[weather_data]</parent-name>
+            <remote-alias>snow_volume_mm</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='weather_data' datatype='table' name='[__tableau_internal_object_id__].[weather_data_894FAE3ED7F74198AB533D2F8C134D7D]' role='measure' type='quantitative' />
+      <column caption='Cloudiness Percent' datatype='real' datatype-customized='true' name='[cloudiness_percent]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Humidity Percent' datatype='real' datatype-customized='true' name='[humidity_percent]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Pressure Hpa' datatype='real' datatype-customized='true' name='[pressure_hpa]' role='measure' type='quantitative' />
+      <column caption='Rain Volume Mm' datatype='real' datatype-customized='true' name='[rain_volume_mm]' role='measure' type='quantitative' />
+      <column caption='Snow Volume Mm' datatype='real' datatype-customized='true' name='[snow_volume_mm]' role='measure' type='quantitative' />
+      <column caption='Temp Feels Like F' datatype='real' datatype-customized='true' name='[temp_feels_like_f]' role='measure' type='quantitative' />
+      <column caption='Temperature F' datatype='real' datatype-customized='true' name='[temperature_f]' role='measure' type='quantitative' />
+      <column caption='Temperature Max F' datatype='real' datatype-customized='true' name='[temperature_max_f]' role='measure' type='quantitative' />
+      <column caption='Temperature Min F' datatype='real' datatype-customized='true' name='[temperature_min_f]' role='measure' type='quantitative' />
+      <column caption='Weather' datatype='string' name='[weather]' role='dimension' type='nominal' />
+      <column caption='Weather Description' datatype='string' name='[weather_description]' role='dimension' type='nominal' />
+      <column caption='Wind Direction Degrees' datatype='real' datatype-customized='true' name='[wind_direction_degrees]' role='measure' type='quantitative' />
+      <column caption='Wind Speed M Per S' datatype='real' datatype-customized='true' name='[wind_speed_m_per_s]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='Date'>
+          <field>[date]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='weather_data' id='weather_data_894FAE3ED7F74198AB533D2F8C134D7D'>
+            <properties context=''>
+              <relation connection='postgres.1jncv2o1ep0p5j11zg0oq1f7hgbg' name='weather_data' table='[public].[weather_data]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Humidity Percentage for 7 Day January Forecast</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather_data (weather_db)' name='federated.1n4ilfm1ft4run1gjcyre1pvlpft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1n4ilfm1ft4run1gjcyre1pvlpft'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Day' name='[dy:date:ok]' pivot='key' type='ordinal' />
+            <column caption='Humidity Percent' datatype='real' datatype-customized='true' name='[humidity_percent]' role='measure' type='quantitative' />
+            <column-instance column='[humidity_percent]' derivation='Sum' name='[sum:humidity_percent:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1n4ilfm1ft4run1gjcyre1pvlpft].[sum:humidity_percent:qk]</rows>
+        <cols>[federated.1n4ilfm1ft4run1gjcyre1pvlpft].[dy:date:ok]</cols>
+      </table>
+      <simple-id uuid='{99714A3E-CCD3-41A2-8EE7-5C4488228E81}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1n4ilfm1ft4run1gjcyre1pvlpft].[dy:date:ok]</field>
+            <field>[federated.1n4ilfm1ft4run1gjcyre1pvlpft].[none:humidity_percent:nk]</field>
+            <field>[federated.1n4ilfm1ft4run1gjcyre1pvlpft].[none:temperature_max_f:ok]</field>
+            <field>[federated.1n4ilfm1ft4run1gjcyre1pvlpft].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9719F7FE-6B97-4C80-9683-D6817F33BC6D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
